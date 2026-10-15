@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "hippo-strike-online",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/ws", "/info", "/health"] },
+  "durable_objects": { "bindings": [{ "name": "HIPPO_HUB", "class_name": "HippoHub" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["HippoHub"] }],
+  "vars": { "SERVER_NAME": "Hippo Strike · Cloudflare" }
+}

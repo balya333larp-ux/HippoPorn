@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>Hippo Strike 4 — HvH</title><link rel="stylesheet" href="style.css"></head><body>
+<canvas id="esp"></canvas>
+<div id="hud">
+ <div id="dmgv"></div><div id="scope"></div>
+ <div class="cross" id="cross"></div>
+ <div id="ind"></div><div id="clogs"></div>
+ <canvas id="radar" width="180" height="180"></canvas>
+ <div id="logs"></div>
+ <div id="topbar"><div class="tm ct" id="sct">0</div><div id="timer">1:55</div><div class="tm t" id="st">0</div></div>
+ <div id="pips"></div><div id="freeze"></div><div id="streak"></div><div id="deathcam"></div>
+ <div id="wm"></div><div id="killfeed"></div>
+ <div id="keybinds"><div class="h"><span>keybinds</span><span>⌨</span></div><div id="kbl"></div></div>
+ <div id="specs"><div class="h"><span>spectators</span><span>👁</span></div><div id="spl"></div></div>
+ <input id="chatin" maxlength="120" placeholder="сообщение… (Enter — отправить, Esc — отмена)" autocomplete="off">
+ <div id="chat"></div><div id="vel"></div><div id="banner"></div>
+ <div class="hb" id="hpbox"><span class="ico">✚</span><span id="hp">100</span><div class="bar"><div id="hpbar"></div></div><span class="ico" id="arico">🛡</span><span id="ar">100</span></div>
+ <div class="hb" id="ammobox"><span id="ammo">10</span><small id="res">/ 90</small><span id="wname">SSG 08</span><img id="wicon" alt=""></div><div id="nades"></div><div id="money">$800</div><div id="mpop"></div>
+ <div id="score"></div>
+</div>
+<div id="fpsc"></div>
+<div id="mm">
+ <div class="cs-vig"></div>
+ <div class="cs-top"><div class="cs-ic"><i data-p="home" title="Главная"></i><i data-p="stats" title="Статистика"></i><i data-p="settings" title="Настройки"></i><i data-p="quit" title="Выход"></i></div>
+  <div class="cs-nav"><div data-p="inventory">ИНВЕНТАРЬ</div><div data-p="loadout">СНАРЯЖЕНИЕ</div><div data-p="play" class="big">ИГРАТЬ</div><div data-p="shop">МАГАЗИН</div><div data-p="news">НОВОСТИ</div></div>
+  <div class="cs-coins" id="cs-coins"></div></div>
+ <div class="cs-side"><div class="sd-top" id="sd-me"><b id="sd-on">0</b></div><div class="sd-list" id="sd-list"></div><div class="sd-bot"><div id="sd-rooms"><b>0</b></div><div id="sd-hist"><b>0</b></div><div id="sd-mail"><em id="sd-mailn"></em></div></div></div>
+ <div id="cs-tag"></div><div id="cs-panel"></div><div id="cs-fr"></div>
+ <div class="cs-foot"><span>neverlose.cc <b>injected</b></span><span>INSERT — меню чита</span><span>v4.9.1 · 128 tick · online</span></div>
+</div>
+<div id="toasts"></div>
+<div id="accept"></div><div id="loading"></div><div id="pause"></div><div id="endm"></div>
+<div id="menu"></div><div id="buy"></div>
+<div id="start"><div class="c"><h1>HIPPO STRIKE 4</h1><div class="go" id="gotxt">КЛИКНИ, ЧТОБЫ НАЧАТЬ</div><div class="sub2">ESC — пауза · INSERT — neverlose</div></div></div>
+<div id="splash"><div class="sp-c"><div class="sp-logo">HIPPO<span>STRIKE 4</span></div><div class="sp-nl">powered by <b>NEVERLOSE</b></div><div class="sp-k">НАЖМИТЕ ЛЮБУЮ КЛАВИШУ</div></div></div>
+<div id="ctxlost"><div>Графический контекст потерян (видеодрайвер перегружен).<br>Подожди пару секунд или перезагрузи страницу и поставь качество «Низко».</div></div>
+
+<div id="cursor-hint" style="display:none"></div>
+<script src="js/three.min.js"></script><script src="js/game.js"></script></body></html>

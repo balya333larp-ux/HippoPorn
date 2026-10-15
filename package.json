@@ -1,0 +1,12 @@
+{
+  "name": "hippo-strike-online",
+  "version": "4.9.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.0"
+  }
+}
